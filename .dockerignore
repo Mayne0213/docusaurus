@@ -1,0 +1,33 @@
+# Dependencies
+node_modules
+npm-debug.log*
+
+# Build output
+build/
+.docusaurus/
+
+# Environment
+.env
+.env.*
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# CI/CD
+.github/
+
+# Keep nginx config
+!nginx/
