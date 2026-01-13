@@ -27,7 +27,7 @@ RUN npm run build
 # =============================================================================
 # Stage 4: Runner - Nginx로 정적 파일 서빙
 # =============================================================================
-FROM nginx:alpine AS runner
+FROM docker.io/library/nginx:alpine AS runner
 
 RUN apk add --no-cache curl
 
