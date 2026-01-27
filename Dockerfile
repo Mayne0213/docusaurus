@@ -1,16 +1,16 @@
 # =============================================================================
-# Stage 1: Builder - Bun으로 의존성 설치 및 빌드
+# Stage 1: Builder - npm으로 의존성 설치 및 빌드
 # =============================================================================
-FROM docker.io/oven/bun:1-alpine AS builder
+FROM docker.io/library/node:20-alpine AS builder
 WORKDIR /app
 
 RUN apk add --no-cache libc6-compat
 
-COPY docusaurus/package.json docusaurus/bun.lock* docusaurus/bun.lockb* docusaurus/package-lock.json* ./
-RUN bun install --frozen-lockfile --backend=copyfile
+COPY docusaurus/package.json docusaurus/package-lock.json* ./
+RUN npm ci
 
 COPY docusaurus/ .
-RUN bun run build
+RUN npm run build
 
 # =============================================================================
 # Stage 2: Runner - Nginx로 정적 파일 서빙
