@@ -15,7 +15,7 @@ RUN npm run build
 # =============================================================================
 # Stage 2: Runner - Nginx로 정적 파일 서빙
 # =============================================================================
-FROM zot.lumie-infra.com/platform/nginx:alpine AS runner
+FROM zot.lumie-infra.com/library/nginx:alpine AS runner
 
 RUN apk add --no-cache curl
 
