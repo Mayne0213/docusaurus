@@ -20,7 +20,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Mayne0213', // Usually your GitHub org/user name.
+  organizationName: 'Lumie-Edu', // Usually your GitHub org/user name.
   projectName: 'lumie-document', // Usually your repo name.
 
   onBrokenLinks: 'warn',
@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Mayne0213/lumie-document/tree/main/docusaurus/',
+            'https://github.com/Lumie-Edu/lumie-document/tree/main/docusaurus/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -78,7 +78,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/Mayne0213/lumie-document',
+            href: 'https://github.com/Lumie-Edu/lumie-document',
             label: 'GitHub',
             position: 'right',
           },
@@ -122,7 +122,7 @@ const config = {
               },
               {
                 label: 'Repository',
-                href: 'https://github.com/Mayne0213/lumie-document',
+                href: 'https://github.com/Lumie-Edu/lumie-document',
               },
             ],
           },
