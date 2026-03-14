@@ -58,7 +58,7 @@ Our infrastructure is designed for **high availability**, **automation**, and **
 | Homer | Dashboard | https://homer0213.kro.kr |
 | Gitea | Git Service | https://gitea0213.kro.kr |
 | Grafana | Monitoring | https://grafana0213.kro.kr |
-| Docusaurus | Documentation | https://docusaurus0213.kro.kr |
+| Lumie Docs | Documentation | https://docs.lumie-infra.com |
 
 ## Next Steps
 
